@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Highcharts, { pad, Tick } from "highcharts";
+import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import { AgGridReact } from "ag-grid-react";
 import "ag-grid-community/styles/ag-grid.css";

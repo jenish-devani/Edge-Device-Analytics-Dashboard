@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import BarChart from "./parts/BarChart";
-
-import PageFilter from "./parts/PageRegionfilter";
 import StatesHeader from "./parts/StatesHeader";
 import deviceDataJson from "./jsonData/device.json";
 import faultDataJson from "./jsonData/fault.json";
@@ -19,8 +17,8 @@ function App() {
   const [deviceData, setDeviceData] = useState(deviceDatajson);
   const [faultData, setFaultData] = useState(faultDatajson);
 
-  const [filterdeviceData, setFilterDeviceData] = useState(deviceDatajson);
-  const [filterFaultData, setFilterFaultData] = useState(faultDatajson);
+  const [filterdeviceData] = useState(deviceDatajson);
+  const [filterFaultData] = useState(faultDatajson);
 
   const [categoryIndex, setCategoryIndex] = useState(0);
 
